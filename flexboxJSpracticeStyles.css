@@ -1,0 +1,69 @@
+.container {
+	background: black;
+	width: 800;
+	height: 500;
+    display: flex;
+    flex-direction: row;
+	border: solid rgb(51, 49, 49);
+	border-radius: 40px;
+    box-sizing: border-box;
+    margin: auto;
+    margin-bottom: 50;
+    margin-top: 100;
+    padding: 20;
+
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+#mover {
+    background: white;
+	width: 80;
+	height: 80;
+	border: solid rgb(49, 35, 35);
+	border-radius: 40px;
+    box-sizing: border-box;
+}
+
+.container2 {
+    width: 800;
+    display: flex;
+    margin: auto;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#addCircle {
+    background: grey;
+	width: 180;
+	height: 180;
+	border: solid rgb(49, 35, 35);
+	border-radius: 90px;
+    box-sizing: border-box;
+}
+
+.num-of-absent {
+    font-size: 30px;
+    line-height: 180px;
+    text-align: center;
+    background: red;
+	width: 180;
+	height: 180;
+	border: solid rgb(49, 35, 35);
+	border-radius: 90px;
+    box-sizing: border-box;
+    order: -1;
+}
+.num-of-present {
+    font-size: 30px;
+    line-height: 180px;
+    text-align: center;
+    background: green;
+	width: 180;
+	height: 180;
+	border: solid rgb(49, 35, 35);
+	border-radius: 90px;
+    box-sizing: border-box;
+}

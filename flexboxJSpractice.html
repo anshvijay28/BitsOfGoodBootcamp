@@ -1,0 +1,54 @@
+<html lang = "en-US">
+    <head>
+        <link rel = "stylesheet" href = "flexboxJSpracticeStyles.css">
+        <script>
+            document.addEventListener("click", e => {
+                let numOfAbsent = 0;
+                let numOfPresent = 0;
+                const absent = document.getElementsByClassName("num-of-absent")[0]
+                const present = document.getElementsByClassName("num-of-present")[0]
+
+                const container = document.getElementsByClassName("container")[0]
+                const button = document.getElementById("addCircle")
+
+                if (e.target.id === 'addCircle') {
+                    numOfPresent += 1;
+                    circle = document.createElement('div')
+                    circle.setAttribute("id", "mover")
+                    console.log("button click")
+                    container.appendChild(circle)
+                    absent.innerHTML = "Absent: " + numOfAbsent
+                    present.innerHTML = "Present: " + numOfPresent
+
+                }
+                if (e.target.id === 'mover') {
+                    numOfAbsent += 1;
+                    numOfPresent -= 1;
+                    e.target.style.opacity = "0"
+
+                    absent.innerHTML = "Absent: " + numOfAbsent
+                    present.innerHTML = "Present: " + numOfPresent
+                }
+
+            })
+            
+
+        </script>
+    </head>
+    <body>
+        <div class="container">
+        </div>
+        <div class = "container2">
+            <button id = "addCircle">
+                Add
+            </button>
+            <div class = "num-of-absent">
+            </div>
+    
+            <div class = "num-of-present">
+            </div>
+        </div>
+        
+
+    </body>
+</html>

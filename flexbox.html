@@ -1,0 +1,38 @@
+<html lang = "en-US">
+    <head>
+        <link rel = "stylesheet" href = "flexboxStyles.css">
+        <script>
+            let numOfClicks = 0
+            document.addEventListener('click', e=> {
+                const counter = document.getElementsByClassName('counter')[0]
+                const button = document.getElementsByClassName('button')[0]
+                const one = document.getElementsByClassName('item1')[0]
+                if (e.target.classList.contains('button')) {
+                    numOfClicks += 1
+                    if (numOfClicks % 2 === 0) {
+                        button.style.backgroundColor = 'red'
+                        one.style.alignSelf = 'flex-start'
+                    } else {
+                        button.style.backgroundColor = 'blue'
+                        one.style.alignSelf = 'flex-end'
+                    }
+                    console.log("Button has been clicked")
+                    counter.innerHTML = numOfClicks
+                }
+            })
+        </script>
+    </head>
+    <title>
+        FLEXBOX
+    </title>
+    <body>
+        <div class = "container">
+            <div class = "item1"> 1 </div>
+            <div class = "item2"> 2 </div>
+            <div class = "item3"> 3 </div>
+            <div class = "item4"> 4 </div>
+        </div>
+        <button class = "button"> Click Me!</button>
+        <p class = "counter">0</p>
+    </body>
+</html>

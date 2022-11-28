@@ -1,0 +1,58 @@
+.center {
+	border-style: solid;
+	box-sizing: border-box;
+	padding: 20px;
+	width: 500px;
+	border-radius: 50px;
+	margin: auto;
+}
+
+.intuitive-box {
+	border-style: solid;
+	border-radius: 50px;
+	border-color: bisque;
+	box-sizing: border-box;
+	width: 500px;
+	padding: 15px;
+	margin: auto;
+	margin-top: 15;
+	margin-bottom: 20;
+	color: blueviolet;
+}
+
+.parent {
+	border-style: solid;
+	border-radius: 50px;
+	border-color: bisque;
+	box-sizing: border-box;
+	width: 600px;
+	height: 500px;
+	padding: 15px;
+	margin: auto;
+	margin-top: 15;
+	margin-bottom: 20;
+	color: blueviolet;
+}
+
+.stationary {
+	box-sizing: border-box;
+	border: solid green;
+	padding: 10;
+	width: 500;
+	margin: auto;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+}
+
+.relative {
+	box-sizing: border-box;
+	border: solid black;
+	border-width: 5;
+	padding: 10;
+	width: 500;
+	margin: auto;
+	position: relative;
+	left: 50;
+	top: 50;
+}

@@ -1,0 +1,28 @@
+.title {
+	color: darkred;
+	font-family: "Comic Sans MS";
+}
+
+.listOfLangs {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.listOfLangs li::before {
+	content: " - ";
+}
+.listOfLangs li {
+	padding: 3;
+	font-size: small;
+	color: blue;
+}
+
+.titleOfListOfLangs {
+	font-size: larger;
+	color: aqua;
+}
+
+.titleOfListOfLangs > .listOfLangs > li:nth-last-of-type(2n + 1) {
+	color: yellow;
+}

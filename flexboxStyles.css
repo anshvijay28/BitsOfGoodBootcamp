@@ -1,0 +1,48 @@
+.container {
+	box-sizing: border-box;
+	background: grey;
+	border: solid grey;
+	border-radius: 10px;
+	width: 1000;
+    height: 600;
+    
+    display: flex;
+    
+    flex-direction: row;
+    
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.container > div {
+	box-sizing: border-box;
+	background: blue;
+	border: solid blue;
+	border-radius: 10px;
+	width: 100;
+	height: auto;
+	margin: 10;
+	font-size: 60;
+	font-weight: 100;
+	color: aliceblue;
+	text-align: center;
+	padding-top: 25;
+}
+
+.container > .item1,
+.container > .item4 {
+	align-self: flex-end;
+}
+
+.counter {
+    background: red;
+    color: white;
+    box-sizing: border-box;
+    border: solid black;
+    height: 100;
+    width: 100;
+    text-align: center;
+    padding-top: 40;
+    font-size: large;
+}
+
